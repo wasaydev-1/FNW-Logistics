@@ -141,7 +141,7 @@ const ContactForm = () => {
             Get In Touch
           </h2>
           <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-            Ready to streamline your logistics? Let's discuss how we can help your business move forward.
+            Ready to streamline your logistics? Let&apos;s discuss how we can help your business move forward.
           </p>
         </div>
 
@@ -300,7 +300,7 @@ const ContactForm = () => {
                   Thank you! Your message has been sent successfully.
                 </p>
                 <p className="text-green-700 mt-1">
-                  We'll get back to you within 24 hours.
+                  We&apos;ll get back to you within 24 hours.
                 </p>
               </div>
             )}
