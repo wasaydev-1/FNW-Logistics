@@ -181,20 +181,15 @@ const ServicesPage = () => {
     <main>
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center">
-      <div className="absolute inset-0 w-full h-full overflow-hidden" style={{ zIndex: 0 }}>
-  <video
-    autoPlay
-    loop
-    muted
-    playsInline
-    className="absolute inset-0 w-full h-full object-cover"
-    style={{ zIndex: 0 }}
-  >
-    <source src="/fnw-vid.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <div className="absolute inset-0" style={{ backgroundColor: 'rgba(39,39,39,0.7)', zIndex: 1 }}></div>
-</div>
+        <div 
+          className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: "url('/shipping.jpg')",
+            zIndex: 0
+          }}
+        >
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(39,39,39,0.7)' }}></div>
+        </div>
         
         <div className="relative w-full py-8 sm:py-10" style={{ zIndex: 2 }}>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
