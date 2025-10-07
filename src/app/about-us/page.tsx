@@ -1,12 +1,21 @@
+import Image from "next/image";
+
 export default function AboutUsPage() {
   return (
     <main>
       {/* Hero with background image */}
       <section className="relative min-h-[50vh] sm:min-h-[60vh] flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-opacity-120 bg-center"
-          style={{ backgroundImage: "url('/shipping-port-bg.png')" }}
-        />
+        <div className="absolute inset-0">
+          <Image
+            src="/shipping-port-bg.png"
+            alt="FNW Logistics Shipping Port"
+            fill
+            priority
+            quality={85}
+            className="object-cover"
+            sizes="100vw"
+          />
+        </div>
         <div className="absolute inset-0" style={{ background: 'linear-gradient(0deg, rgba(39,39,39,0.6), rgba(39,39,39,0.55))' }} />
         <div className="relative z-10 w-full">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
@@ -42,9 +51,7 @@ export default function AboutUsPage() {
                     Mission
                   </h3>
                   <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                    Be your resilient logistics partner by simplifying end‑to‑end operations—air, sea,
-                    and road—delivering exceptional quality, transparent tracking, and consistent on‑time
-                    performance at every step.
+                  Be your resilient logistics partner by simplifying end-to-end operations across air, sea, custom, and road, delivering exceptional quality, transparent tracking, and consistent on-time performance at every step.
                   </p>
                 </div>
               </div>
@@ -54,26 +61,62 @@ export default function AboutUsPage() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:gap-5">
               {/* Card 1 - Show on mobile only */}
               <div className="relative overflow-hidden rounded-xl shadow-md animate-fade-in-up sm:hidden" style={{ animationDelay: '.05s' }}>
-                <div className="aspect-[3/2] bg-cover bg-center transition-transform duration-500 hover:scale-105"
-                  style={{ backgroundImage: "url('/freight1.jpg')" }} />
+                <div className="aspect-[3/2] relative">
+                  <Image
+                    src="/freight1.jpg"
+                    alt="FNW Logistics Freight Services"
+                    fill
+                    priority={false}
+                    quality={80}
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 640px) 100vw, 50vw"
+                  />
+                </div>
                 <div className="absolute inset-0 ring-1 ring-black/5 rounded-xl pointer-events-none" />
               </div>
               {/* Card 1 - Show on larger screens */}
               <div className="hidden sm:block relative overflow-hidden rounded-xl shadow-md animate-fade-in-up" style={{ animationDelay: '.05s' }}>
-                <div className="aspect-[3/2] bg-cover bg-center transition-transform duration-500 hover:scale-105"
-                  style={{ backgroundImage: "url('/freight1.jpg')" }} />
+                <div className="aspect-[3/2] relative">
+                  <Image
+                    src="/freight1.jpg"
+                    alt="FNW Logistics Freight Services"
+                    fill
+                    priority={false}
+                    quality={80}
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
                 <div className="absolute inset-0 ring-1 ring-black/5 rounded-xl pointer-events-none" />
               </div>
               {/* Card 2 - Show on larger screens */}
               <div className="hidden sm:block relative overflow-hidden rounded-xl shadow-md animate-fade-in-up" style={{ animationDelay: '.12s' }}>
-                <div className="aspect-[3/2] bg-cover bg-center transition-transform duration-500 hover:scale-105"
-                  style={{ backgroundImage: "url('/freight2.jpg')" }} />
+                <div className="aspect-[3/2] relative">
+                  <Image
+                    src="/freight2.jpg"
+                    alt="FNW Logistics Transportation"
+                    fill
+                    priority={false}
+                    quality={80}
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
                 <div className="absolute inset-0 ring-1 ring-black/5 rounded-xl pointer-events-none" />
               </div>
               {/* Card 3 - Show on larger screens, spans 2 columns */}
               <div className="hidden sm:block sm:col-span-2 relative overflow-hidden rounded-xl shadow-md animate-fade-in-up" style={{ animationDelay: '.2s' }}>
-                <div className="aspect-[21/9] bg-cover bg-center transition-transform duration-500 hover:scale-105"
-                  style={{ backgroundImage: "url('/freight3.jpg')" }} />
+                <div className="aspect-[21/9] relative">
+                  <Image
+                    src="/road1.jpg"
+                    alt="FNW Logistics Global Operations"
+                    fill
+                    priority={false}
+                    quality={80}
+                    className="object-cover transition-transform duration-500 hover:scale-105"
+                    sizes="(max-width: 1200px) 100vw, 66vw"
+                  />
+                </div>
                 <div className="absolute inset-0 ring-1 ring-black/5 rounded-xl pointer-events-none" />
               </div>
             </div>

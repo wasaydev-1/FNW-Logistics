@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FNW Logistics - Delivering The Future Of Logistics",
+  title: "FNW Logistics ",
   description: "Fast, reliable, and tech-driven shipping solutions across the globe. Same-day delivery in select metro cities.",
 };
 

@@ -138,7 +138,7 @@ const ServicesPage = () => {
       title: "Custom House Brokerage",
       headline: "Expert Customs Clearance for Smooth Trade Operations",
       description: "Navigate Pakistan's customs regulations with confidence through FNW Logistics' professional customs brokerage services. Our licensed customs agents ensure fast, compliant clearance of your shipments.",
-      image: "/house.jpg",
+      image: "/house1.jpg",
       imagePosition: "right",
       capabilities: [
         "Import and export customs documentation",
@@ -159,7 +159,7 @@ const ServicesPage = () => {
       title: "Charter Services",
       headline: "Dedicated Charter Solutions for Urgent and Oversized Cargo",
       description: "When standard shipping schedules don't meet your urgent requirements, FNW Logistics arranges dedicated charter services by air and sea. We provide flexible, customized charter solutions for time-critical and special cargo.",
-      image: "/charter.jpg",
+      image: "/charter1.jpg",
       imagePosition: "left",
       capabilities: [
         "Full aircraft charter for urgent bulk shipments",
@@ -274,7 +274,10 @@ const ServicesPage = () => {
                       src={service.image}
                       alt={service.title}
                       fill
+                      priority={false}
+                      quality={80}
                       className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                   </div>

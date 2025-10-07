@@ -1,16 +1,20 @@
 import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section className="relative min-h-[60vh] sm:min-h-[65vh] lg:min-h-[70vh] flex items-center justify-center">
       {/* Background Image */}
-      <div 
-        className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: "url('/freight4.jpg')",
-          zIndex: 0
-        }}
-      >
+      <div className="absolute inset-0 w-full h-full">
+        <Image
+          src="/shipping1.png"
+          alt="FNW Logistics Hero Background"
+          fill
+          priority
+          quality={85}
+          className="object-cover"
+          sizes="100vw"
+        />
         {/* Enhanced overlay for better text readability */}
         <div className="absolute inset-0" style={{ backgroundColor: 'rgba(39,39,39,0.7)' }}></div>
       </div>
